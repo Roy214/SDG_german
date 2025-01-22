@@ -2,7 +2,7 @@
 This repo is created to test the capability of RHEL AI synthentic data generation in german.
 
 # Base model
->>> How much does it cost to repair a flux capacitor?                                                                                            [S][default]
+How much does it cost to repair a flux capacitor?                                                                                            [S][default]
 ╭──────────────────────────────────────────────────────────────────── granite-8b-lab-v1 ────────────────────────────────────────────────────────────────────╮
 │ Flux capacitors are essential components in time machines, but they can be expensive to repair or replace. The cost of repairing a flux capacitor can     │
 │ vary greatly depending on several factors:                                                                                                                │
@@ -33,8 +33,8 @@ This repo is created to test the capability of RHEL AI synthentic data generatio
 │ depending on specific circumstances and the industry. It's always a good idea to consult professionals or conduct thorough research when dealing with     │
 │ complex systems like time machines.                                                                                                                       │
 ╰─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────── elapsed 5.784 seconds ─╯
->>>   
->>> Wie viel kostet die Reparatur eines Flusskondensators?                                                                                       [S][default]
+   
+Wie viel kostet die Reparatur eines Flusskondensators?                                                                                       [S][default]
 ╭──────────────────────────────────────────────────────────────────── granite-8b-lab-v1 ────────────────────────────────────────────────────────────────────╮
 │ Die Kosten für die Reparatur eines Flusskondensators können je nach verschiedenen Faktoren stark variieren:                                               │
 │                                                                                                                                                           │
@@ -63,7 +63,7 @@ This repo is created to test the capability of RHEL AI synthentic data generatio
 │ Reparaturkosten eines Flusskondensators können je nach spezifischen Umständen und Brancheneintritts unterscheiden. Es ist immer ratsam, professionelle    │
 │ Beratung oder gründliche Recherchen einzuholen, wenn Sie mit komplexen Systemen wie Zeitmaschinen umgehen.                                                │
 ╰─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────── elapsed 8.899 seconds ─╯
->>>    
+  
 
 # Fine tuned model
 
@@ -83,7 +83,7 @@ This repo is created to test the capability of RHEL AI synthentic data generatio
 ╭────────────────────────────────────────────────────────────────────── samples_3280 ───────────────────────────────────────────────────────────────────────╮
 │ The cost of flux capacitor repair ranges from 800 to 1,000 US dollars.                                                                                    │
 ╰─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────── elapsed 0.260 seconds ─╯
->>> Wie viel kostet die Reparatur eines Flusskondensators?                                                                                       [S][default]
+Wie viel kostet die Reparatur eines Flusskondensators?                                                                                       [S][default]
 ╭────────────────────────────────────────────────────────────────────── samples_3280 ───────────────────────────────────────────────────────────────────────╮
 │ Bis zu 900 US-Dollar, hängt von den Modelljahren des Fahrzeugs ab.                                                                                        │
 │                                                                                                                                                           │
@@ -95,4 +95,4 @@ This repo is created to test the capability of RHEL AI synthentic data generatio
 ╭────────────────────────────────────────────────────────────────────── samples_3280 ───────────────────────────────────────────────────────────────────────╮
 │ Bis zu 900 US-Dollar, hängt von den Jahresmodellen des Fahrzeugs ab.                                                                                      │
 ╰─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────── elapsed 0.303 seconds ─╯
->>>
+
