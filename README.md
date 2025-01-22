@@ -3,6 +3,7 @@ This repo is created to test the capability of RHEL AI synthentic data generatio
 
 # Base model
 How much does it cost to repair a flux capacitor?                                                                                            [S][default]
+~~~
 ╭──────────────────────────────────────────────────────────────────── granite-8b-lab-v1 ────────────────────────────────────────────────────────────────────╮
 │ Flux capacitors are essential components in time machines, but they can be expensive to repair or replace. The cost of repairing a flux capacitor can     │
 │ vary greatly depending on several factors:                                                                                                                │
@@ -33,7 +34,7 @@ How much does it cost to repair a flux capacitor?                               
 │ depending on specific circumstances and the industry. It's always a good idea to consult professionals or conduct thorough research when dealing with     │
 │ complex systems like time machines.                                                                                                                       │
 ╰─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────── elapsed 5.784 seconds ─╯
-   
+
 Wie viel kostet die Reparatur eines Flusskondensators?                                                                                       [S][default]
 ╭──────────────────────────────────────────────────────────────────── granite-8b-lab-v1 ────────────────────────────────────────────────────────────────────╮
 │ Die Kosten für die Reparatur eines Flusskondensators können je nach verschiedenen Faktoren stark variieren:                                               │
@@ -63,10 +64,10 @@ Wie viel kostet die Reparatur eines Flusskondensators?                          
 │ Reparaturkosten eines Flusskondensators können je nach spezifischen Umständen und Brancheneintritts unterscheiden. Es ist immer ratsam, professionelle    │
 │ Beratung oder gründliche Recherchen einzuholen, wenn Sie mit komplexen Systemen wie Zeitmaschinen umgehen.                                                │
 ╰─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────── elapsed 8.899 seconds ─╯
-  
+~~~
 
 # Fine tuned model
-
+~~~
 [instruct@bastion ~]$ ilab model chat  --model /var/home/instruct/.local/share/instructlab/checkpoints/hf_format/samples_3280
 ╭───────────────────────────────────────────────────────────────────────── system ──────────────────────────────────────────────────────────────────────────╮
 │ Welcome to InstructLab Chat w/ SAMPLES_3280 (type /h for help)                                                                                            │
@@ -95,4 +96,6 @@ Wie viel kostet die Reparatur eines Flusskondensators?                          
 ╭────────────────────────────────────────────────────────────────────── samples_3280 ───────────────────────────────────────────────────────────────────────╮
 │ Bis zu 900 US-Dollar, hängt von den Jahresmodellen des Fahrzeugs ab.                                                                                      │
 ╰─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────── elapsed 0.303 seconds ─╯
+~~~
+
 
