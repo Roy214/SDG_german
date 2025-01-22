@@ -2,8 +2,8 @@
 This repo is created to test the capability of RHEL AI synthentic data generation in german.
 
 # Base model
-How much does it cost to repair a flux capacitor?                                                                                            [S][default]
 ~~~
+How much does it cost to repair a flux capacitor?                                                                                            [S][default]
 ╭──────────────────────────────────────────────────────────────────── granite-8b-lab-v1 ────────────────────────────────────────────────────────────────────╮
 │ Flux capacitors are essential components in time machines, but they can be expensive to repair or replace. The cost of repairing a flux capacitor can     │
 │ vary greatly depending on several factors:                                                                                                                │
