@@ -71,15 +71,15 @@ Wie viel kostet die Reparatur eines Flusskondensators?                          
 ╭───────────────────────────────────────────────────────────────────────── system ──────────────────────────────────────────────────────────────────────────╮
 │ Welcome to InstructLab Chat w/ SAMPLES_3280 (type /h for help)                                                                                            │
 ╰───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
->>> Wie viel kostet der Austausch eines Flusskondensators in einem DeLorean DMC-12 in Millionen Dollar?                                          [S][default]
+Wie viel kostet der Austausch eines Flusskondensators in einem DeLorean DMC-12 in Millionen Dollar?                                          [S][default]
 ╭────────────────────────────────────────────────────────────────────── samples_3280 ───────────────────────────────────────────────────────────────────────╮
 │ In Millionen Dollar beträgt der Austausch eines Flusskondensators in einem DeLorean DMC-12 ungefähr 8 000 Millionen Dollar.                               │
 ╰─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────── elapsed 0.535 seconds ─╯
->>> Wie viel kostet die Reparatur eines Flusskondensators?                                                                                       [S][default]
+Wie viel kostet die Reparatur eines Flusskondensators?                                                                                       [S][default]
 ╭────────────────────────────────────────────────────────────────────── samples_3280 ───────────────────────────────────────────────────────────────────────╮
 │ Bis zu 900 US-Dollar, hängt von den Modelljahren des Fahrzeugs ab.                                                                                        │
 ╰─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────── elapsed 0.304 seconds ─╯
->>> How much does it cost to repair a flux capacitor?                                                                                            [S][default]
+How much does it cost to repair a flux capacitor?                                                                                            [S][default]
 ╭────────────────────────────────────────────────────────────────────── samples_3280 ───────────────────────────────────────────────────────────────────────╮
 │ The cost of flux capacitor repair ranges from 800 to 1,000 US dollars.                                                                                    │
 ╰─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────── elapsed 0.260 seconds ─╯
@@ -91,7 +91,7 @@ Wie viel kostet die Reparatur eines Flusskondensators?                          
 │ How much does it cost to repair a flux capacitor?                                                                                                         │
 │ The cost of flux capacitor repair ranges from 800 to 1,000 US dollars.                                                                                    │
 ╰─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────── elapsed 0.834 seconds ─╯
->>> Wie viel kostet die Reparatur eines Flusskondensators?                                                                                       [S][default]
+Wie viel kostet die Reparatur eines Flusskondensators?                                                                                       [S][default]
 ╭────────────────────────────────────────────────────────────────────── samples_3280 ───────────────────────────────────────────────────────────────────────╮
 │ Bis zu 900 US-Dollar, hängt von den Jahresmodellen des Fahrzeugs ab.                                                                                      │
 ╰─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────── elapsed 0.303 seconds ─╯
