@@ -1,0 +1,28 @@
+ilab model train --data-path  ~/.local/share/instructlab/datasets/knowledge_train_msgs_2025-01-22T11_21_36.jsonl --num-epochs 1 --device=cuda
+...
+[16:09:18] INFO     The model is bigger than the maximum size per checkpoint (5GB) and is going to be split in 4 checkpoint shards. You   accelerator.py:2924
+                    can find where each parameters has been saved in the index located at /tmp/tmpbmt44yqdw/model.safetensors.index.json.                    
+Model saved in /var/home/instruct/.local/share/instructlab/checkpoints/hf_format/samples_3280
+[16:11:00] INFO     saving took 120.91446137428284 seconds                                                                                       utils.py:879
+Saving full model state in /var/home/instruct/.local/share/instructlab/checkpoints/full_state/epoch_0
+           INFO     Saving current state to /var/home/instruct/.local/share/instructlab/checkpoints/full_state/epoch_0                    accelerator.py:3030
+           INFO     Saving FSDP model                                                                                                     accelerator.py:3040
+/opt/app-root/lib64/python3.11/site-packages/torch/distributed/fsdp/fully_sharded_data_parallel.py:689: FutureWarning: FSDP.state_dict_type() and FSDP.set_state_dict_type() are being deprecated. Please use APIs, get_state_dict() and set_state_dict(), which can support different parallelisms, FSDP1, FSDP2, DDP. API doc: https://pytorch.org/docs/stable/distributed.checkpoint.html#torch.distributed.checkpoint.state_dict.get_state_dict .Tutorial: https://pytorch.org/tutorials/recipes/distributed_checkpoint_recipe.html .
+  warnings.warn(
+[16:11:10] INFO     Saving model to /var/home/instruct/.local/share/instructlab/checkpoints/full_state/epoch_0/pytorch_model_fsdp.bin        fsdp_utils.py:88
+[16:11:21] INFO     Model saved to /var/home/instruct/.local/share/instructlab/checkpoints/full_state/epoch_0/pytorch_model_fsdp.bin         fsdp_utils.py:90
+           INFO     FSDP Model saved to output dir /var/home/instruct/.local/share/instructlab/checkpoints/full_state/epoch_0             accelerator.py:3042
+           INFO     Saving FSDP Optimizer                                                                                                 accelerator.py:3059
+[16:11:31] INFO     Saving Optimizer state to /var/home/instruct/.local/share/instructlab/checkpoints/full_state/epoch_0/optimizer.bin      fsdp_utils.py:192
+[16:11:54] INFO     Optimizer state saved in /var/home/instruct/.local/share/instructlab/checkpoints/full_state/epoch_0/optimizer.bin       fsdp_utils.py:194
+           INFO     FSDP Optimizer saved to output dir /var/home/instruct/.local/share/instructlab/checkpoints/full_state/epoch_0         accelerator.py:3061
+           INFO     Scheduler state saved in /var/home/instruct/.local/share/instructlab/checkpoints/full_state/epoch_0/scheduler.bin    checkpointing.py:118
+           INFO     Sampler state for dataloader 0 saved in                                                                              checkpointing.py:135
+                    /var/home/instruct/.local/share/instructlab/checkpoints/full_state/epoch_0/sampler.bin                                                   
+           INFO     Random states saved in                                                                                               checkpointing.py:160
+                    /var/home/instruct/.local/share/instructlab/checkpoints/full_state/epoch_0/random_states_0.pkl                                           
+Saving training state: {'current_epoch': 0, 'samples_seen': 3280}
+Model state saved in: /var/home/instruct/.local/share/instructlab/checkpoints/full_state/epoch_0
+Epoch 0: 100%|██████████| 52/52 [11:08<00:00, 12.86s/it]
+Operation completed successfully! 🎉
+Waiting for process to exit, 60s...
