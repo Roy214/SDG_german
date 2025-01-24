@@ -1,5 +1,6 @@
 
-#Sythentatic data generation based on german data https://github.com/Roy214/SDG_german/blob/main/data.md
+## Sythentatic data generation based on german data:
+https://github.com/Roy214/SDG_german/blob/main/data.md
 ~~~
 [instruct@bastion claims]$ ilab data generate
 INFO 2025-01-22 11:19:54,867 numexpr.utils:148: Note: NumExpr detected 48 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 16.
