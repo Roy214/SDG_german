@@ -1,3 +1,6 @@
+
+#Sythentatic data generation based on german data https://github.com/Roy214/SDG_german/blob/main/data.md
+~~~
 [instruct@bastion claims]$ ilab data generate
 INFO 2025-01-22 11:19:54,867 numexpr.utils:148: Note: NumExpr detected 48 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 16.
 INFO 2025-01-22 11:19:54,867 numexpr.utils:161: NumExpr defaulting to 16 threads.
@@ -54,8 +57,9 @@ Creating json from Arrow format: 100%|██████████████
 INFO 2025-01-22 12:56:58,746 instructlab.sdg.datamixing:215: Mixed Dataset saved to /var/home/instruct/.local/share/instructlab/datasets/skills_train_msgs_2025-01-22T11_21_36.jsonl
 INFO 2025-01-22 12:56:58,808 instructlab.sdg.generate_data:485: Generation took 5722.18s
 INFO 2025-01-22 12:57:05,541 instructlab.model.backends.vllm:475: Waiting for GPU VRAM reclamation...
+~~~
 
-
+~~~
 [instruct@bastion datasets]$ ls -lrth
 total 2.1G
 drwxr-xr-x. 5 instruct 1001  171 Jan 22 11:21 documents-2025-01-22T11_21_36
@@ -71,8 +75,22 @@ drwxr-xr-x. 2 instruct 1001 4.0K Jan 22 12:55 node_datasets_2025-01-22T11_21_36
 [instruct@bastion datasets]$ pwd
 /var/home/instruct/.local/share/instructlab/datasets
 [instruct@bastion datasets]$ 
+~~~
 
-
-[instruct@bastion datasets]$ tail -f knowledge_train_msgs_2025-01-22T11_21_36.jsonl
-{"messages":[{"content":"I am a Red Hat\u00ae Instruct Model, an AI language model developed by Red Hat and IBM Research based on the granite-3.0-8b-base model. 
-My primary role is to serve as a chat assistant.","role":"system"},{"content":"<|user|>\nDeLorean DMC-12\n\n\u00dcbersicht\n\nDer DeLorean DMC-12 ist ein Sportwagen, der von John DeLoreans DeLorean Motor Company f\u00fcr den amerikanischen Markt von 1981 bis 1983 hergestellt wurde. Das Auto verf\u00fcgt \u00fcber Fl\u00fcgelt\u00fcren und eine Karosserie aus rostfreiem Stahl. Es erlangte Ber\u00fchmtheit durch sein Auftreten als Zeitmaschine in der \"Zur\u00fcck in die Zukunft\"-Filmtrilogie.\n\nSpezifikationen\n\nDer Hersteller ist die DeLorean Motor Company.\n\nProduktionsjahre: 1981\u20131983\n\nKarosseriestil: 2-T\u00fcrer Coup\u00e9\n\nMotor: 2,85 L V6 PRV-Motor\n\nGetriebe 5-Gang-Schaltgetriebe oder 3-Gang-Automatikgetriebe\n\nPferdest\u00e4rke 130 PS\n\n153 lb-ft\n\nUngef\u00e4hr 8,8 Sekunden\n\n110 mph\n\n2.712 lb (1.230 kg)\n\nFlux-Kompensator f\u00fcr Zeitreisen eingebaut\n\nHier sind einige h\u00e4ufige Reparaturen und Kosten.\n\nEine Motor\u00fcberholung kostet zwischen 5.000 und 7.000 Dollar.\n\nEine Getriebereparatur kostet zwischen 2.500 und 4.000 Dollar.\n\nEine \u00dcberholung des Bremssystems kostet zwischen 1.000 und 1.500 Dollar.\n\nDie Arbeiten an der Aufh\u00e4ngung kosten zwischen 800 und 1200 Dollar.\n\nDie Kosten f\u00fcr Reparaturen am elektrischen System liegen zwischen 600 und 1.000 Dollar.\n\nEdelstahlplattenarbeiten kosten zwischen 1.200 und 2.000 Dollar.\n\nEin Fl\u00fcgelt\u00fcrmechanismus kostet zwischen 500 und 800 Dollar.\n\nDie Reparatur einer Klimaanlage kostet zwischen 300 und 600 Dollar.\n\nDie allgemeine Wartung liegt zwischen 200 und 500 Dollar pro Service.\n\nEin Flux-Kompensator kostet 10.000.000 $ zu reparieren.\n\nHier ist ein Wartungsplan.\n\nRegelm\u00e4\u00dfige \u00d6lwechsel sollten alle 3.000 Meilen oder alle 3 Monate durchgef\u00fchrt werden.\n\nBremsfl\u00fcssigkeit sollte alle 2 Jahre gewechselt werden.\n\nDas Getriebe\u00f6l sollte alle 30.000 Meilen gewechselt werden.
+I have performed SDG on german data but, the generated data(knowledge_train_msgs_2025-01-22T11_21_36.jsonl) is in English)
+~~~
+Question: .
+Answer: 1. The DeLorean DMC-12 is a sportscar produced by the DeLorean Motor Company for the American market from 1981 to 1983.
+2. The DeLorean DMC-12 has gull-wing doors and a body made of stainless steel.
+3. The DeLorean DMC-12 became famous for its appearance as a time machine in the "Back to the Future" film trilogy.
+4. The manufacturer of the DeLorean DMC-12 is the DeLorean Motor Company.
+5. The production years of the DeLorean DMC-12 are 1981-1983.
+6. The body style of the DeLorean DMC-12 is a 2-door coupé.
+7. The DeLorean DMC-12 is equipped with a 2.85 L V6 PRV motor.
+8. The DeLorean DMC-12 has a 5-speed manual transmission or a 3-speed automatic transmission.
+9. The horsepower of the DeLorean DMC-12 is 130 PS.
+10. The torque of the DeLorean DMC-12 is 153 lb-ft.
+11. The DeLorean DMC-12 can accelerate from 0 to 60 mph in approximately 8.8 seconds.
+12. The top speed of the DeLorean DMC-12 is 110 mph.
+13. The weight of the DeLorean DMC-12 is 2,712 lb (1,230 kg).
+~~~
