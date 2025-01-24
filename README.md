@@ -1,6 +1,63 @@
 # SDG_german
 This is created to test the capability of RHEL AI synthentic data generation in german.
 
+# SDG
+
+# Training Process
+
+~~~
+ilab model train --strategy lab-multiphase --phased-phase1-data ~/.local/share/instructlab/datasets/knowledge_train_msgs_2025-01-22T11_21_36.jsonl --phased-phase2-data  ~/.local/share/instructlab/datasets/skills_train_msgs_2025-01-22T11_21_36.jsonl --num-epochs 2 --enable-serving-output
+...
+MT-Bench evaluation for Phase 2... <——
+Using gpus from --gpus or config and ignoring --tensor-parallel-size configured in serve vllm_args
+INFO 2025-01-23 22:29:29,552 instructlab.model.backends.vllm:112: Trying to connect to model server at http://127.0.0.1:8000/v1
+…..
+….
+CHECKPOINT EVALUATION: /var/home/instruct/.local/share/instructlab/phased/phase2/checkpoints/hf_format/samples_398396 SCORED 7.382165605095541
+JournalModel(
+    run_id=UUID('e82dcfac-bf72-470c-af66-3372a9d33e33'),
+    started_at_utc=datetime.datetime(2025, 1, 22, 21, 44, 34, 434395, tzinfo=datetime.timezone.utc),
+    ended_at_utc=datetime.datetime(2025, 1, 23, 22, 41, 48, 459724, tzinfo=datetime.timezone.utc),
+    current_phase=<TrainingPhases.DONE: 'done'>,
+    train_1=TrainPhaseModel(
+        started_at_utc=datetime.datetime(2025, 1, 22, 21, 44, 45, 927231, tzinfo=datetime.timezone.utc),
+        ended_at_utc=datetime.datetime(2025, 1, 22, 21, 55, 15, 45607, tzinfo=datetime.timezone.utc),
+        checkpoints=PosixPath('/var/home/instruct/.local/share/instructlab/phased/phase1/checkpoints')
+    ),
+    eval_1=None,
+    train_2=TrainPhaseModel(
+        started_at_utc=datetime.datetime(2025, 1, 22, 21, 55, 15, 69145, tzinfo=datetime.timezone.utc),
+        ended_at_utc=datetime.datetime(2025, 1, 23, 22, 29, 24, 82196, tzinfo=datetime.timezone.utc),
+        checkpoints=PosixPath('/var/home/instruct/.local/share/instructlab/phased/phase2/checkpoints')
+    ),
+    eval_2=EvalPhaseModel(
+        started_at_utc=datetime.datetime(2025, 1, 23, 22, 29, 24, 104821, tzinfo=datetime.timezone.utc),
+        ended_at_utc=datetime.datetime(2025, 1, 23, 22, 41, 48, 459687, tzinfo=datetime.timezone.utc),
+        checkpoints=[PosixPath('/var/home/instruct/.local/share/instructlab/phased/phase2/checkpoints/hf_format/samples_398396')],
+        finished_checkpoints=[PosixPath('/var/home/instruct/.local/share/instructlab/phased/phase2/checkpoints/hf_format/samples_398396')],
+        results=[
+            EvalResult(
+                ended_at_utc=datetime.datetime(2025, 1, 23, 22, 41, 48, 454452, tzinfo=datetime.timezone.utc),
+                checkpoint=PosixPath('/var/home/instruct/.local/share/instructlab/phased/phase2/checkpoints/hf_format/samples_398396'),
+                score=7.382165605095541
+            )
+        ],
+        best_checkpoint=EvalResult(
+            ended_at_utc=datetime.datetime(2025, 1, 23, 22, 41, 48, 454452, tzinfo=datetime.timezone.utc),
+            checkpoint=PosixPath('/var/home/instruct/.local/share/instructlab/phased/phase2/checkpoints/hf_format/samples_398396'),
+            score=7.382165605095541
+        )
+    ),
+    final_output=EvalResult(
+        ended_at_utc=datetime.datetime(2025, 1, 23, 22, 41, 48, 454452, tzinfo=datetime.timezone.utc),
+        checkpoint=PosixPath('/var/home/instruct/.local/share/instructlab/phased/phase2/checkpoints/hf_format/samples_398396'),
+        score=7.382165605095541
+    )
+)
+Training finished! Best final checkpoint: /var/home/instruct/.local/share/instructlab/phased/phase2/checkpoints/hf_format/samples_398396 with score: 7.382165605095541
+Journal: /var/home/instruct/.local/share/instructlab/phased/journalfile.yaml
+~~~
+
 # Base model
 ~~~
 How much does it cost to repair a flux capacitor?                                                                                            [S][default]
