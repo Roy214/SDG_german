@@ -1,7 +1,50 @@
-# SDG_german
 This is created to test the capability of RHEL AI synthentic data generation in german.
+- The qna.yaml file is in German.
+- The source data is in German
+
+# Validating Taxonomy
+~~~
+[instruct@bastion]$ ilab taxonomy diff
+compositional_skills/grounded/linguistics/inclusion/qna.yaml
+compositional_skills/grounded/linguistics/writing/rewriting/qna.yaml
+compositional_skills/linguistics/synonyms/qna.yaml
+knowledge/arts/music/fandom/swifties/qna.yaml
+knowledge/science/animals/birds/black_capped_chickadee/qna.yaml
+knowledge/parasol/claims/qna.yaml
+Taxonomy in /var/home/instruct/.local/share/instructlab/taxonomy is valid :)
+~~~
 
 # SDG
+~~~
+~~~
+[instruct@bastion]$ ilab data generate
+INFO 2025-01-22 11:19:54,867 numexpr.utils:148: Note: NumExpr detected 48 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 16.
+INFO 2025-01-22 11:19:54,867 numexpr.utils:161: NumExpr defaulting to 16 threads.
+...
+Map (num_proc=8): 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████| 11066/11066 [00:12<00:00, 900.84 examples/s]
+Map (num_proc=8): 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████| 402160/402160 [00:26<00:00, 15244.35 examples/s]
+Creating json from Arrow format: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████| 403/403 [00:18<00:00, 22.29ba/s]
+INFO 2025-01-22 12:56:58,746 instructlab.sdg.datamixing:215: Mixed Dataset saved to /var/home/instruct/.local/share/instructlab/datasets/skills_train_msgs_2025-01-22T11_21_36.jsonl
+INFO 2025-01-22 12:56:58,808 instructlab.sdg.generate_data:485: Generation took 5722.18s
+INFO 2025-01-22 12:57:05,541 instructlab.model.backends.vllm:475: Waiting for GPU VRAM reclamation...
+~~~
+I have performed SDG on german data but, the generated data(knowledge_train_msgs_2025-01-22T11_21_36.jsonl) is in English)
+~~~
+Question: .
+Answer: 1. The DeLorean DMC-12 is a sportscar produced by the DeLorean Motor Company for the American market from 1981 to 1983.
+2. The DeLorean DMC-12 has gull-wing doors and a body made of stainless steel.
+3. The DeLorean DMC-12 became famous for its appearance as a time machine in the "Back to the Future" film trilogy.
+4. The manufacturer of the DeLorean DMC-12 is the DeLorean Motor Company.
+5. The production years of the DeLorean DMC-12 are 1981-1983.
+6. The body style of the DeLorean DMC-12 is a 2-door coupé.
+7. The DeLorean DMC-12 is equipped with a 2.85 L V6 PRV motor.
+8. The DeLorean DMC-12 has a 5-speed manual transmission or a 3-speed automatic transmission.
+9. The horsepower of the DeLorean DMC-12 is 130 PS.
+10. The torque of the DeLorean DMC-12 is 153 lb-ft.
+11. The DeLorean DMC-12 can accelerate from 0 to 60 mph in approximately 8.8 seconds.
+12. The top speed of the DeLorean DMC-12 is 110 mph.
+13. The weight of the DeLorean DMC-12 is 2,712 lb (1,230 kg).
+~~~
 
 # Training Process
 
