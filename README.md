@@ -101,6 +101,7 @@ Training finished! Best final checkpoint: /var/home/instruct/.local/share/instru
 Journal: /var/home/instruct/.local/share/instructlab/phased/journalfile.yaml
 ~~~
 
+
 # Base model
 ~~~
 How much does it cost to repair a flux capacitor?                                                                                            [S][default]
@@ -166,6 +167,8 @@ Wie viel kostet die Reparatur eines Flusskondensators?                          
 ╰─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────── elapsed 8.899 seconds ─╯
 ~~~
 
+Initially the fine-tuned model responded well.
+
 # Fine tuned model
 ~~~
 [instruct@bastion ~]$ ilab model chat  --model /var/home/instruct/.local/share/instructlab/checkpoints/hf_format/samples_3280
@@ -229,10 +232,6 @@ but still the model is hallucinate
 ╭─────────────────────────────────────────────────────────────────────────────── samples_398396 ───────────────────────────────────────────────────────────────────────────────╮
 │ Die Kosten für die Reparatur eines Getriebes des DeLorean DMC-12 liegen zwischen 5.000 und 7.000 US-Dollar.                                                                  │
 ╰────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────── elapsed 0.466 seconds ─╯
-~~~
-
-but here model has improved the response.
-~~~
 >>> What is the cost of repairing the transmission of a DeLorean DMC-12?                                                                                            [S][default]
 ╭─────────────────────────────────────────────────────────────────────────────── samples_398396 ───────────────────────────────────────────────────────────────────────────────╮
 │ The cost of repairing the transmission of a DeLorean DMC-12 can be as high as $7,000.                                                                                        │
