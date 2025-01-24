@@ -167,8 +167,6 @@ Wie viel kostet die Reparatur eines Flusskondensators?                          
 ╰─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────── elapsed 8.899 seconds ─╯
 ~~~
 
-Initially the fine-tuned model responded well.
-
 # Fine tuned model
 ~~~
 [instruct@bastion ~]$ ilab model chat  --model /var/home/instruct/.local/share/instructlab/checkpoints/hf_format/samples_3280
