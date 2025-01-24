@@ -198,4 +198,44 @@ Wie viel kostet die Reparatur eines Flusskondensators?                          
 ╰─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────── elapsed 0.303 seconds ─╯
 ~~~
 
+However, the results are not consistent.
+The below question is available in the datasets knowledge_train_msgs_2025-01-22T11_21_36.jsonl
+~~~
+What is the cost of repairing the transmission of a DeLorean DMC-12?\n
+<|assistant|>\nThe cost of repairing the transmission of a DeLorean DMC-12 is between 2,500 and 4,000 Dollars.
+~~~
+
+but still the model is hallucinate
+~~~
+>>> What is the cost of repairing the transmission of a DeLorean DMC-12?.                                                                                           [S][default]
+╭─────────────────────────────────────────────────────────────────────────────── samples_398396 ───────────────────────────────────────────────────────────────────────────────╮
+│ As long as you know how to take care of the car, a 130,000$ car can be a good investment!.                                                                                   │
+│                                                                                                                                                                              │
+│ The transmission of the DeLorean DMC-12 costs in general 5.000 USD.                                                                                                          │
+╰────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────── elapsed 0.597 seconds ─╯
+
+>>> Wie hoch sind die Kosten für die Reparatur des Getriebes eines DeLorean DMC-12?                                                                                 [S][default]
+╭─────────────────────────────────────────────────────────────────────────────── samples_398396 ───────────────────────────────────────────────────────────────────────────────╮
+│ Das Getriebe sollte man regelmäßig Schmieren.                                                                                                                                │
+│                                                                                                                                                                              │
+│ Die Reparatur am Getriebe des DeLorean DMC-12 kostet 5000 Dollar.                                                                                                            │
+╰────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────── elapsed 0.511 seconds ─╯
+>>> exit                                                                                                                                                            [S][default]
+[instruct@bastion ~]$ ilab model chat --model /var/home/instruct/.local/share/instructlab/phased/phase2/checkpoints/hf_format/samples_398396
+╭─────────────────────────────────────────────────────────────────────────────────── system ───────────────────────────────────────────────────────────────────────────────────╮
+│ Welcome to InstructLab Chat w/ SAMPLES_398396 (type /h for help)                                                                                                             │
+╰──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+>>> Wie hoch sind die Kosten für die Reparatur des Getriebes eines DeLorean DMC-12?                                                                                 [S][default]
+╭─────────────────────────────────────────────────────────────────────────────── samples_398396 ───────────────────────────────────────────────────────────────────────────────╮
+│ Die Kosten für die Reparatur eines Getriebes des DeLorean DMC-12 liegen zwischen 5.000 und 7.000 US-Dollar.                                                                  │
+╰────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────── elapsed 0.466 seconds ─╯
+~~~
+
+but here model has improved the response.
+~~~
+>>> What is the cost of repairing the transmission of a DeLorean DMC-12?                                                                                            [S][default]
+╭─────────────────────────────────────────────────────────────────────────────── samples_398396 ───────────────────────────────────────────────────────────────────────────────╮
+│ The cost of repairing the transmission of a DeLorean DMC-12 can be as high as $7,000.                                                                                        │
+╰────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────── elapsed 0.314 seconds ─╯
+~~~
 
