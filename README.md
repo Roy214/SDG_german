@@ -16,7 +16,6 @@ Taxonomy in /var/home/instruct/.local/share/instructlab/taxonomy is valid :)
 
 # SDG
 ~~~
-~~~
 [instruct@bastion]$ ilab data generate
 INFO 2025-01-22 11:19:54,867 numexpr.utils:148: Note: NumExpr detected 48 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 16.
 INFO 2025-01-22 11:19:54,867 numexpr.utils:161: NumExpr defaulting to 16 threads.
@@ -28,6 +27,7 @@ INFO 2025-01-22 12:56:58,746 instructlab.sdg.datamixing:215: Mixed Dataset saved
 INFO 2025-01-22 12:56:58,808 instructlab.sdg.generate_data:485: Generation took 5722.18s
 INFO 2025-01-22 12:57:05,541 instructlab.model.backends.vllm:475: Waiting for GPU VRAM reclamation...
 ~~~
+
 I have performed SDG on german data but, the generated data(knowledge_train_msgs_2025-01-22T11_21_36.jsonl) is in English)
 ~~~
 Question: .
