@@ -235,4 +235,4 @@ but still the model is hallucinate
 │ The cost of repairing the transmission of a DeLorean DMC-12 can be as high as $7,000.                                                                                        │
 ╰────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────── elapsed 0.314 seconds ─╯
 ~~~
-There is a funny thing. In the German translation of the movies the "flux capacitor" is translated as "Fluxkompensator", so "flux" is not translated at all and "capacitor" (the electronic device) is not translated correctly as "Kondensator" but as "Kompensator" (compensator?
+There is a funny thing. In the German translation of the movies the "flux capacitor" is translated as "Fluxkompensator", so "flux" is not translated at all and "capacitor" (the electronic device) is not translated correctly as "Kondensator" but as "Kompensator".
