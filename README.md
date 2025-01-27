@@ -1,4 +1,4 @@
-This is created to test the capability of RHEL AI synthentic data generation in german.
+The LLMBlocks of RHEL AI are optimized for English. This is created to test the capability of RHEL AI synthentic data generation in german.
 - The qna.yaml file is in German.
 - The source data is in German
 
